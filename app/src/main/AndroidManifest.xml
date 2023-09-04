@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--  <uses-feature android:name="android.hardware.camera"/>
+     <uses-feature android:name="android.hardware.camera.autofocus"/>
+     <uses-feature android:name="android.hardware.camera.front"/>
+     <uses-feature android:name="android.hardware.camera.front.autofocus"/> -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_lane"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+
+        tools:targetApi="31">
+        <activity
+            android:name=".InstructionsActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".videoClass"
+            android:screenOrientation="landscape"
+            />
+
+
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- My Old Secret app ID: ca-app-pub-5679479887909470~1610136544 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5679479887909470~9361536382"/>
+
+        <!-- For apps targeting Android 13 or higher & GMA SDK version 20.3.0 or lower-->
+
+    </application>
+
+</manifest>

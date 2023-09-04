@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">roadhelper</string>
+    <string name="instruction2">This is an Android app for detecting lanes on a road using a camera, work better on highways, not in streets. The the code processes the video frames captured by the camera and identifies the lanes by applying image processing techniques.
+                                \n\nThe app uses OpenCV, an open-source computer vision library, for image processing. It applies various filters such as Gaussian blur, Canny edge detection, and morphological operations to the grayscale version of the input image. It then masks the region of interest in the image, i.e., the area of the image containing the road, and applies a Hough transform to detect the lines in this region.
+                                \n\nThe detected lines are filtered based on their slopes, and the left and right lane points are collected separately. Finally, the app draws the detected lanes on the input image and shows the region of interest if the user chooses to do so.
+                                \n\nThe parameter scale can be set in real time. Use it to change the distance displays pixels to meters
+    </string>
+</resources>
